@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+    
+    <head>
+        <title>To Do List</title>
+       
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+body{
+    background-color: #000000;
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #6495ED;
+    box-shadow: 0 2px 8px rgba(0,0,0,.16);
+    width: 460px;
+    height: 680px;
+    text-align: center;
+    font-family: 'Nunito',sans-serif;
+   
+}
+h1{
+    margin: 12px 0;
+}
+.add-elements{
+    margin: 12px 0;
+    
+}
+input{
+    padding: 6px 4px;
+    width: 70%;
+}
+button{
+    padding: 7px 14px;
+    background-color: #00b0ff;
+    border: none;
+    border-radius: 4px;
+    color: #fafafa;
+
+}
+.element-list{
+    height: 550px;
+    overflow-y: scroll
+}
+ul{
+    padding: 15px;
+   
+}
+li{
+    list-style: none;
+    padding: 10px 5px;
+    background-color: #fff;
+    margin: 12px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,.16);
+    border-radius: 3px;
+    transition: .4s;
+}
+button:hover{
+    background-color: #483D8B;
+}
+
+li:hover{
+    background-color: #483D8B;
+}
+
+.checked{
+    text-decoration: line-through;
+    background-color: #ADD8E6;
+}
+
+
+      </style>
+    </head>
+    
+    <body>
+
+
+        <div class="container">
+            <h1>To Do List</h1>
+            
+            <div class="Type Something">
+                <input id="add" type="text" placeholder="Type Something">
+                <button id="btn">Add</button>
+		
+            </div>
+            
+            <div class="element-list">
+                <ul id="list">
+                    <li>Feed Pets</li> 
+                    <input type="checkbox">
+			 <center> Due Date </center>
+			 <input type="date">
+		</form>
+                    <li>Clean House</li> 
+		     <input type="checkbox">
+			<center> Due Date </center> 
+			<input type="date">
+		</form>
+                    <li>Buy Snacks</li> 
+		     <input type="checkbox">
+			<center> Due Date </center> 
+			<input type="date">
+		</form>
+                    <li>Do Homework</li> 
+		     <input type="checkbox">
+			<center> Due Date </center> 
+			<input type="date">
+		</form>
+
+		                </ul>
+            </div>
+            
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+    
